@@ -10,7 +10,27 @@
      <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.28/build/spline-viewer.js"></script>
     <!-- external css  -->
     <link rel="stylesheet" href="style.css">
+    <!-- normal css -->
+     <link rel="stylesheet" href="mobile.css">
 </head>
 <body>
+    <nav class="bg-white flex items-center justify-between">
+      <div>
+        <img src="icons/resuma_logo_transparent_background-removebg-preview.png" alt="BrandLogo" width="90px">
+      </div>
+      <div class="hidden lg:flex justify-center items-center absolute top-20 lg:static lg:top-0  lg:p-2 bg-blue-100 lg:bg-transparent" id="mobilemenu">
+        <ul class="flex flex-col gap-8 p-3 lg:flex-row lg:p-0 lg:gap-40">
+            <li><a href="Home" class="linkstyle">Home</a></li>
+            <li><a href="Services" class="linkstyle">Services</a></li>
+            <li><a href="Generator" class="linkstyle">Generator</a></li>
+            <li><a href="Contact" class="linkstyle">Contact</a></li>
+        </ul>
+      </div>
+      <div class="lg:hidden " id="hamburger">
+          <img src="icons/menu.png" alt="hamburgerButton" width="40px">
+      </div>
+    </nav>
+    <!-- nav bar created  -->
+    <script src="nav.js"></script>
 </body>
 </html>
